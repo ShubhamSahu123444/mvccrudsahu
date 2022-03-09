@@ -1,0 +1,29 @@
+﻿@model mvccrudsahu.Models.Empolyee
+@{
+}
+<div class="row">
+    <div class="col-6 offset-3">
+        <form asp-action="Edit" asp-controller="Empolyee" method="post">
+
+            <div class="form-group">
+                <input type="hidden" asp-for="Id" />
+                <label asp-for="Name"></label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Place"></label>
+                <input asp-for="Place" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Age"></label>
+                <input asp-for="Age" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+
+        </form>
+    </div>
+</div>
